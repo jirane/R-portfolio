@@ -1,4 +1,4 @@
-import DrawSvgPlugin from 'gsap-trial/DrawSVGPlugin'
+// import DrawSvgPlugin from 'gsap-trial/DrawSVGPlugin'
 import gsap from 'gsap-trial'
 import './index.scss'
 import {useRef,useEffect} from 'react'
