@@ -1,0 +1,130 @@
+.tech-tag{
+    color:#a020fa;
+    font-weight:bold
+}
+.skills{
+    width:54%;
+    position: absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+
+    .html{
+        h3{
+            color:#e3a129 !important;
+            text-shadow: 0px 0px 3px #e3a129;
+            
+        }
+        span{
+            background-color: #e3a129 !important;
+            box-shadow: 0px 0px 6px .5px #e3a129;
+        }
+    }
+    .js{
+        h3{
+            color:yellow !important;
+            text-shadow: 0px 0px 3px yellow;
+            animation-delay:2.1s  !important;
+        }
+        span{
+            background-color: yellow !important;
+            box-shadow: 0px 0px 6px .5px yellow;
+        }
+    }
+    .react{
+        h3{
+            color:#6cc7ca  !important;
+            text-shadow: 0px 0px 3px #6cc7ca;
+            animation-delay:2.2s  !important;
+        }
+        span{
+            background-color: #6cc7ca  !important;
+            box-shadow: 0px 0px 6px .5px #6cc7ca;
+        }
+    }
+    .jquery{
+        h3{
+            color:#2b5fa6  !important;
+            text-shadow: 0px 0px 3px #2b5fa6;
+            animation-delay:2.3s  !important;
+        }
+        span{
+            background-color: #2b5fa6  !important;
+            box-shadow: 0px 0px 6px .5px #2b5fa6;
+        }
+    }
+    .skill{
+        width:80%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:10px;
+        h3{
+            color:#fff;
+            font-size: 18px;
+            width:20%;
+            animation:fadeInLeft 1s  2s;
+            animation-fill-mode:backwards;
+        }
+        .skill-bar{
+            position: relative;
+            width: 80%;
+            height: 5px;
+            background-color:rgba(204, 204, 204, 0.225);
+            border-radius:30px;
+            animation:rubberBand 1s linear;
+            span{
+                position:absolute;
+                width:0;
+                height:100%;
+                transition: width 1s linear;
+                border-radius:30px;
+            }
+        }
+    }
+}
+@media (max-width:480px){
+    .skills-page{
+        .text-zone{
+            top: 35% !important;
+        }
+        .skills{
+            width:100%;
+            top:60%;
+            transform: translate(0);
+            right:2%;
+            .skill{
+                gap:10%;
+                width:100%;
+                .skill-bar{
+                    width:70%
+                }
+            }
+        }
+    }
+}
+@media (min-width:481px) and (max-width:769px){
+    .skills-page{
+        .text-zone{
+            width:95% !important;
+            left:3% !important;
+            top: 35% !important;
+        }
+        .skills{
+            width:100%;
+            top:60%;
+            transform: translate(0);
+            right:0;
+            .skill{
+                gap:10%;
+                width:95%;
+                h3{
+                    width:15%;
+                }
+                .skill-bar{
+                    width:70%
+                }
+            }
+        }
+    }
+}

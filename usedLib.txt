@@ -1,0 +1,10 @@
+animate.css
+Gsap(greensock animation platform)
+loaders.css
+react-fontawesome
+@fortawesome/free-brand-svg-icons
+@fortawesome/free-solid-svg-icons
+emailJs
+react-loaders
+react-router
+sass

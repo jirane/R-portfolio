@@ -1,0 +1,104 @@
+.home-page{
+    .text-zone{
+        position:absolute;
+        z-index:1;
+        left:10%;
+        top:50%;
+        translate: 0 -50%;
+        width:40%;
+        max-height:90%;
+        h1{
+            margin:0;
+            color:#fff;
+            font-size:60px;
+            font-family: 'Coolvetica';
+            font-weight:500;
+            line-height:1;
+            &:before{
+                content:'<h1>';
+                font-family:'La belle Aurore';
+                color:#a029f9;
+                font-size:20px;;
+                position: absolute;
+                top:-15px;
+                left:-15px;
+                opacity:.6
+            }
+            &:after{
+                content:'</h1>';
+                font-family:'la belle aurore';
+                color:#a029f9;
+                font-size:20px;;
+                position: absolute;
+                margin-top:35px;
+                margin-left:20px;
+                opacity:.6;
+                animation:fadeIn 1s 1.7s backwards;
+            }
+            img{
+                width:32px;
+                opacity: 0;
+                height:auto;
+                animation: rotateIn 1s linear both;
+                animation-delay:1.4s;
+            }
+        }
+        h2{
+            color: #8d8d8d;
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 11px;
+            font-family: "Open Sans", sans-serif;
+            letter-spacing: 3px;
+            animation:fadeIn 1s 1.8 backwards;
+        }
+        .flat-button{
+            margin-top:20px;
+            text-transform: uppercase;
+            border:2px solid #a029f9;
+            text-decoration:none;
+            color:#a029f9;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            float: left;
+            animation: fadeIn 1s 1.8s backwards;
+            white-space: nowrap;
+            &:hover{
+                background-color: #a029f9;
+                color:#022c43;
+            }
+        }
+    }
+}
+@media(max-width:480px){
+    .text-zone{
+        width:100% !important;
+        left:-2% !important;
+        top:56% !important;
+        h1{
+            font-size: 50px !important;
+            &:after{
+                left:0;
+                margin-top:60px !important;
+                margin-left:-10 !important;
+            }
+        }
+        h2{
+            margin-top:40px !important;
+        }
+        .flat-button{
+            margin-top:100px !important;
+        }
+    }
+}
+@media (min-width:481px) and (max-width:768px){
+    .text-zone{
+        width:50% !important;
+        h1{
+            font-size: 50px !important;
+        }
+    }
+    
+}

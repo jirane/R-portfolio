@@ -1,0 +1,40 @@
+$pirmary-color:#A020F0;
+@import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss';
+@font-face{
+  font-family:'helvetica neue';
+  src:url('./assets/fonts/helvetica-neu.ttf') format('ttf')
+}
+@font-face{
+  font-family:'La Belle Aurore';
+  src:url('./assets/fonts/LaBelleAurore.woff2') format('woff2')
+}
+@font-face{
+  font-family:'Coolvetica';
+  src:url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2')
+}
+@font-face{
+  font-family:'Coolvetica';
+  src:url('./assets/fonts/CoolveticaRg-Regular.woff') format('woff');
+}
+@font-face{
+  font-family: 'La Belle Aurore';
+  src: url('../src/assets/fonts/LaBelleAurore.woff') ;
+}
+input,
+textarea{
+    font-family:'helvetica neue';
+}
+.loader-active{
+    display:block;
+    margin: 0;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translateX(-50%);
+    animation: fadeOut 1s 1s;
+    animation-fill-mode:forwards;
+    width:50px;
+    height:50px;
+}
