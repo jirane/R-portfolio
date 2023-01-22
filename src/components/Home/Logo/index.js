@@ -1,19 +1,25 @@
 // import DrawSvgPlugin from 'gsap-trial/DrawSVGPlugin'
 // import gsap from 'gsap-trial'
+import anime from 'animejs/lib/anime.es'
 import './index.scss'
-import {useRef} from 'react'
+import {useRef,useEffect} from 'react'
 import LogoS from '../../../assets/images/logo-s.png'
 const Logo = ()=> {
 const bgRef = useRef()
 const outLineLogoRef = useRef()
 const solidLogoRef = useRef()
-// useEffect(()=>{
-//     gsap.registerPlugin(DrawSvgPlugin)
-//     const tl = gsap.timeline()
-//     tl.to(bgRef.current,{opacity:1,duration:1})
-//     .from(outLineLogoRef.current,{drawSVG:100,duration:20})
-//     gsap.fromTo(solidLogoRef.current,{opacity:0},{opacity:1,duration:4,delay:4})
-// },[])
+    useEffect(()=>{
+        // gsap.registerPlugin(DrawSvgPlugin)
+        // const tl = gsap.timeline()
+        // tl.to(bgRef.current,{opacity:1,duration:1})
+        // .from(outLineLogoRef.current,{drawSVG:100,duration:20})
+        // gsap.fromTo(solidLogoRef.current,{opacity:0},{opacity:1,duration:4,delay:4})
+        anime({
+            targets:outLineLogoRef,
+            strokeDashoffset: [anime.setDashoffset, 0],
+            delay: anime.stagger(250),
+        });
+    },[])
     return(
         <div className="logo-container" ref={bgRef}>
         <img ref={solidLogoRef} className="solid-logo" src={LogoS} alt="S" />
