@@ -15,7 +15,7 @@ const solidLogoRef = useRef()
         // .from(outLineLogoRef.current,{drawSVG:100,duration:20})
         // gsap.fromTo(solidLogoRef.current,{opacity:0},{opacity:1,duration:4,delay:4})
         anime({
-            targets:outLineLogoRef,
+            targets:outLineLogoRef.current,
             strokeDashoffset: [anime.setDashoffset, 0],
             delay: anime.stagger(250),
         });
