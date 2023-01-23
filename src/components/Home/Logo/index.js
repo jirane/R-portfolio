@@ -24,8 +24,8 @@ const solidLogoRef = useRef()
                 {
                     element:solidLogoRef.current,
                     opacity:[0,1],
-                    duration:4000,
-                    delay:6000,
+                    duration:6000,
+                    delay:4000,
                 }
             ]
         });
