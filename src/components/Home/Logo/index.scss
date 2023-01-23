@@ -8,6 +8,7 @@
     height:609px;
     z-index:0;
     margin:auto;
+
     .solid-logo{
         position:absolute;
         top:auto;
@@ -16,6 +17,7 @@
         left:0;
         margin: auto;
         width:100%;
+        opacity:0;
         transform:rotateZ(30deg);
         z-index: 1;
     }

@@ -1,5 +1,3 @@
-// import DrawSvgPlugin from 'gsap-trial/DrawSVGPlugin'
-// import gsap from 'gsap-trial'
 import anime from 'animejs/lib/anime.es'
 import './index.scss'
 import {useRef,useEffect} from 'react'
@@ -9,21 +7,22 @@ const bgRef = useRef()
 const outLineLogoRef = useRef()
 const solidLogoRef = useRef()
     useEffect(()=>{
-        // gsap.registerPlugin(DrawSvgPlugin)
-        // const tl = gsap.timeline()
-        // tl.to(bgRef.current,{opacity:1,duration:1})
-        // .from(outLineLogoRef.current,{drawSVG:100,duration:20})
-        // gsap.fromTo(solidLogoRef.current,{opacity:0},{opacity:1,duration:4,delay:4})
         anime({
                     targets: bgRef.current,
                     opacity:[0,1],
-                    duration:2000,
+                    duration:1000,
                 })
+        anime({
+            targets:outLineLogoRef.current,
+            strokeDasharray: 125922.984375,
+            strokeDashoffset: [125922.984375,0],
+            duration: 20000,
+        })
         anime({
             targets:solidLogoRef.current,
             opacity:[0,1],
             duration:6000,
-            delay:4000,
+            delay:8000,
         })
 
     },[])
