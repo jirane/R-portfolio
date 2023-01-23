@@ -9,7 +9,6 @@
     z-index:0;
     margin:auto;
     opacity:0;
-    animation: op 2s linear forwards;
     .solid-logo{
         position:absolute;
         top:auto;
@@ -50,12 +49,4 @@
         width:45%
     }
     
-}
-@keyframes op{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity: 1;
-    }
 }
