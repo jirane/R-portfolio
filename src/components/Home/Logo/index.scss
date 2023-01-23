@@ -20,6 +20,7 @@
         opacity:0;
         transform:rotateZ(30deg);
         z-index: 1;
+        animation: op 2s linear forwards;
     }
     svg{
         max-width:100%;
@@ -49,4 +50,9 @@
         width:45%
     }
     
+}
+@keyframes op{
+    to{
+        opacity: 1;
+    }
 }
