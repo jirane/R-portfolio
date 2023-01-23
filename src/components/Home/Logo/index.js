@@ -19,13 +19,13 @@ const solidLogoRef = useRef()
                 {
                     element: bgRef.current,
                     opacity:[0,1],
-                    duration:1000,
+                    duration:2000,
                 },
                 {
                     element:solidLogoRef.current,
                     opacity:[0,1],
                     duration:4000,
-                    delay:4000,
+                    delay:6000,
                 }
             ]
         });
