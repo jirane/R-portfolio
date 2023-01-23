@@ -9,6 +9,7 @@
     z-index:0;
     margin:auto;
     opacity:0;
+    animation: op 2s linear forwards;
     .solid-logo{
         position:absolute;
         top:auto;
@@ -20,7 +21,6 @@
         opacity:0;
         transform:rotateZ(30deg);
         z-index: 1;
-        animation: op 2s linear forwards;
     }
     svg{
         max-width:100%;
