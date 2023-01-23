@@ -15,21 +15,17 @@ const solidLogoRef = useRef()
         // .from(outLineLogoRef.current,{drawSVG:100,duration:20})
         // gsap.fromTo(solidLogoRef.current,{opacity:0},{opacity:1,duration:4,delay:4})
         anime({
-            targets:[
-                {
-                    element: bgRef.current,
+                    targets: bgRef.current,
                     opacity:[0,1],
                     duration:2000,
-                },
-                {
-                    element:solidLogoRef.current,
-                    opacity:[0,1],
-                    duration:6000,
-                    delay:4000,
-                }
-            ],
-            duration:4000,
-        });
+                })
+        anime({
+            targets:solidLogoRef.current,
+            opacity:[0,1],
+            duration:6000,
+            delay:4000,
+        })
+
     },[])
     return(
         <div className="logo-container" ref={bgRef}>
