@@ -27,8 +27,8 @@ const solidLogoRef = useRef()
                     duration:4000,
                     delay:4000,
                 }
-            ]
-            
+            ],
+            duration:4000,
         });
     },[])
     return(
