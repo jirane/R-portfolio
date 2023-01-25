@@ -5,6 +5,7 @@ import Home from './components/Home/index.js'
 import About from './components/About/index'
 import Contact from './components/Contact/index'
 import Skills from './components/Skills/index'
+import NotFound from './components/NotFound/index.js'
 import './App.scss';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
             <Route path='/about' element = {<About />} />
             <Route path='/contact' element={<Contact/>} />
             <Route path='/skills' element={<Skills />} />
-            <Route path='*' element={<p>page not found</p>} />
+            <Route path='*' element={<NotFound />} />
           </Route>
         </Routes>
       </>

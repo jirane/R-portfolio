@@ -1,0 +1,56 @@
+.notFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height :100%;
+        h1{
+            font-size: 80px;
+            color: #a029f9;
+            background-image: url(../../assets/images/galaxy.jpg);
+            background-position: center;
+            color:transparent;
+            background-clip:text;
+            margin: 0;
+            text-align: center;
+        }
+        img{
+            width:100px;
+            height:100px;
+            animation: flow 5s linear  infinite;
+        }
+        
+        p{
+            font-size:20px;
+            color:#fff;
+            font-weight: 700;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: #a029f9;
+            font-size: 16px;
+            border: 1px solid #a029f9;
+            border-radius: 30px;
+            padding: 10px 12px 13px 12px;
+            text-transform: uppercase;
+            font-weight: 500;
+            &:hover,
+            &:focus{
+                background-color: #a029f9;
+                color:#022c43;
+            }
+        }
+}
+
+@keyframes flow{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translatey(-50px);
+    }
+    100%{
+        transform:translateY(0)
+    }
+}

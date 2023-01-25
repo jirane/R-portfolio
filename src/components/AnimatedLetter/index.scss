@@ -9,7 +9,8 @@
     display: inline-block;
     min-width: 10px;
     animation-fill-mode: both;
-    &:hover{
+    &:hover,
+    &:focus{
         color:#a029f9;
         animation:rubberBand 1s;
     }
