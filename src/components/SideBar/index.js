@@ -5,7 +5,7 @@ import gsap from 'gsap-trial'
 import MyLogo from '../../assets/images/logo-s.png';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
-import {faEnvelope,faHome,faLink,faUser,faSuitcase, faToolbox, faTools} from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope,faHome,faLink,faUser,faSuitcase,faTools} from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const SideBar = ()=>{
     const burgerRef = useRef();
