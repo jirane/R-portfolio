@@ -37,7 +37,7 @@ const Skills = ()=>{
                         <AnimatedLetter letterClass={letterClass} strArray={skillsArr} idx={15}/>
                     </h1>
                     <p>
-                        Expert in front-end development including technologies like {color()}
+                        Expert in front-end development including technologies like {color()} etc.
                     </p>
                     <p>
                         I’m not a designer but I have a good sense of aesthetics, and experience in responsive, mobile-first
@@ -56,19 +56,25 @@ const Skills = ()=>{
                     <div className="js skill">
                         <h3>JavaScript</h3>
                         <div className='skill-bar'>
-                            <span className=' bar' data-width={80}></span>
+                            <span className=' bar' data-width={85}></span>
                         </div>
                     </div>
                     <div className="react skill">
                         <h3>React</h3>
                         <div className='skill-bar'>
-                            <span className=' bar' data-width={75}></span>
+                            <span className=' bar' data-width={80}></span>
                         </div>
                     </div>
                     <div className="jquery skill">
                         <h3>jQuery</h3>
                         <div className='skill-bar'>
                             <span className=' bar' data-width={60}></span>
+                        </div>
+                    </div>
+                    <div className="php skill">
+                        <h3>PHP</h3>
+                        <div className='skill-bar'>
+                            <span className=' bar' data-width={30}></span>
                         </div>
                     </div>
                 </div>
