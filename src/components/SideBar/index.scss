@@ -62,21 +62,26 @@
             }
             &:first-child{
                 &::after{
-                    content: 'HOME';
+                    content: 'Home';
                 }
             }
             &.about-link{
-                &:after{
-                    content:'ABOUT'
+                &::after{
+                    content:'About'
+                }
+            }
+            &.works-link{
+                &::after{
+                    content: 'Work';
                 }
             }
             &.contact-link{
-                &:after{
+                &::after{
                     content:'Contact'
                 }
             }
             &.skills-link{
-                &:after{
+                &::after{
                     content:'Skills'
                 }
             }
