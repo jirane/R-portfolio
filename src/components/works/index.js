@@ -5,6 +5,7 @@ import weather from '../../assets/images/coolweather.jpg'
 import calc from '../../assets/images/calc.jpg'
 import bondi from '../../assets/images/bondi.jpg'
 import exTracker from '../../assets/images/expenseTracker.jpg'
+import todo from '../../assets/images/todo.jpg'
 import WorkCard from './workCard'
 import Loader from 'react-loaders'
 const Works = () =>{
@@ -25,6 +26,7 @@ const Works = () =>{
                     <WorkCard className='work-card' img={calc} title='Calculator' description='comprehensive calculator application with all the main function, with a simple design.' tools='vite + react' alt='calc' link='https://clcul.netlify.app/' git='https://github.com/jirane/calculator-vite-react'/>
                     <WorkCard className='work-card' img={exTracker} title='Expense Tracker App' description='an expense tracker application to help you manage and track you daily expenses.' tools='create-react-app + react-hooks' alt='expense tracker' link='https://exepense-tracker.netlify.app/' git='https://github.com/jirane'/>
                     <WorkCard className='work-card' img={bondi} title='Static Webstie' description='turning psd to an html' tools='bootstrap + js' alt='business website' link='https://grand-cendol-681259.netlify.app/' git='https://github.com/jirane/Bondi'/>
+                    <WorkCard className='work-card' img={todo} title='todo app' description='todo app to save time and effort' alt='todo app' link='https://do-now.netlify.app' git='https://github.com/jirane/to-do-app'/>
                 </div>
             </div>
             <Loader type='pacman'/>
